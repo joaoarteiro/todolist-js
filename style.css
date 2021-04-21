@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(238, 238, 238, 0.616);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 2em;
+    color: #009688;
+}
+
+header,
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+form input,
+form button {
+    padding: 0.5em;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    background: #ffffff;
+}
+
+form input:focus::placeholder {
+    color: transparent;
+  }
+
+form button {
+    color: #009688;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    background: white;
+}
+
+form button:hover {
+    color: white;
+    background: #009688;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    list-style: none;
+    min-width: 30%;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em;
+    background: white;
+    color: black;
+    font-size: 1.5em;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.todo li {
+    flex: 1;
+}
+
+.form-wrapper {
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
+}
+
+.trash-btn,
+.complete-btn {
+    color: white;
+    border: none;
+    padding: 0.8em;
+    cursor: pointer;
+    font-size: 0.8em;
+    outline: none;
+}
+
+.complete-btn {
+    background: #4DB6AC;
+    border-radius: 4px 0 0 4px;
+}
+
+.complete-btn:hover {
+    background: #009688;
+}
+
+.trash-btn {
+    border-radius: 0 4px 4px 0;
+    background: #EF5350;
+}
+
+.trash-btn:hover {
+    background: #F44336;
+}
+
+.todo-item {
+    padding: 0 0.5em;
+}
+
+.fa-check,
+.fa-trash {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(6em);
+    opacity: 0;
+}
